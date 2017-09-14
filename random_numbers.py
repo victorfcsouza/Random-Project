@@ -10,7 +10,7 @@ def set_seed(value):
 
 def random_seed():
     global seed
-    seed = int(time.time())
+    seed = int(time.time()*1000)
     linear_congruential_generator(2147483648, 1103515245, 12345)
     
     
